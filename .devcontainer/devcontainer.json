@@ -1,0 +1,23 @@
+{
+    "name": "Common Lisp Development",
+    "customizations": {
+        "vscode": {
+            "extensions": [],
+            "settings": {}
+        }
+    },
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "network": "host"
+        }
+    },
+    "mounts": [
+        "source=/home/ricardo/dev/challenges,target=/workspaces/lisp_challenges,type=bind,consistency=cached"
+    ],
+    "containerEnv": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "en_US:en",
+        "LC_ALL": "en_US.UTF-8"
+    }
+}
